@@ -14,7 +14,7 @@ source ~/.vimrc" > ~/.config/nvim/init.vim
 
 if [ ! -d ~/.vim_runtime ] ; then
 	echo "clone runtime"
-	git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone https://github.com/5cr009e/vimrc.git ~/.vim_runtime
 fi
 
 echo "cloned"
