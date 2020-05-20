@@ -67,10 +67,10 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum""]"
 
 
 let hr = (strftime('%H'))
-if hr >= 18 
+if hr >= 8 
     let ayucolor="mirage"
-elseif hr >= 8
-    let ayucolor="light"
+"elseif hr >= 8
+    "let ayucolor="light"
 elseif hr >= 0
     let ayucolor="dark" 
 endif
