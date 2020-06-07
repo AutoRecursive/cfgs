@@ -6,4 +6,4 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 git clone https://github.com/plexus/chemacs.git ~/.chemacs
 bash ~/.chemacs/install.sh
-ln -s .emacs-profiles.el ~/.emacs-profiles.el
+ln -s $(pwd)/.emacs-profiles.el ~/.emacs-profiles.el
