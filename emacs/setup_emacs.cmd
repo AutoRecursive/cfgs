@@ -1,17 +1,17 @@
 @echo off
-git clone https://github.com/5cr009e/prelude.git %USERPROFILE%\.prelude
-mklink /D %USERPROFILE%\AppData\Roaming\.emacs.d  %USERPROFILE%\.prelude
+git clone https://github.com/5cr009e/prelude.git %USERPROFILE%\AppData\Roaming\.prelude.d
+mklink /D %USERPROFILE%\.prelude %USERPROFILE%\AppData\Roaming\.prelude.d
 
-git clone https://github.com/syl20bnr/spacemacs %USERPROFILE%\.spacemacs
-mklink /D %USERPROFILE%\AppData\Roaming\.spacemacs.d  %USERPROFILE%\.spacemacs
+git clone https://github.com/syl20bnr/spacemacs %USERPROFILE%\AppData\Roaming\.spacemacs.d
+mklink /D %USERPROFILE%\.spacemacs %USERPROFILE%\AppData\Roaming\.spacemacs.d
 
 git clone https://github.com/plexus/chemacs.git ..\..\chemacs
 powershell ..\..\chemacs\install.ps1
 
-mklink %USERPROFILE%\.emacs-profiles.el  %USERPROFILE%\.emacs-profiles.el
-REM mklink %USERPROFILE%\AppData\Roaming\.emacs  %USERPROFILE%\.emacs
+@REM mklink %USERPROFILE%\.emacs-profiles.el  %USERPROFILE%\.emacs-profiles.el
+@REM  mklink %USERPROFILE%\AppData\Roaming\.emacs  %USERPROFILE%\.emacs
 
-REM echo (("default" . ((user-emacs-directory . "~/.prelude"))) > %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
-REM echo ("spacemacs" . ((user-emacs-directory . "~/.spacemacs"))) >> %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
-REM echo (("default" . ((user-emacs-directory . "~/.prelude"))) > %USERPROFILE%\.emacs-profiles.el
-REM echo ("spacemacs" . ((user-emacs-directory . "~/.spacemacs"))) >> %USERPROFILE%\.emacs-profiles.el
+@REM echo (("default" . ((user-emacs-directory . "~/.prelude"))) >> %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
+@REM echo ("spacemacs" . ((user-emacs-directory . "~/.spacemacs")))) >> %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
+echo (("default" . ((user-emacs-directory . "~/.prelude.d"))) > %USERPROFILE%\.emacs-profiles.el
+echo ("spacemacs" . ((user-emacs-directory . "~/.spacemacs.d")))) >> %USERPROFILE%\.emacs-profiles.el

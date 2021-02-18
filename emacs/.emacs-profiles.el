@@ -1,3 +1,3 @@
-(("default" . ((user-emacs-directory . "~/.emacs.d")))
- ("prelude" . ((user-emacs-directory . "~/.prelude")))
+(("default" . ((user-emacs-directory . "~/.prelude.d")))
+ ("spacemacs" . ((user-emacs-directory . "~/.spacemacs.d")))
  )
