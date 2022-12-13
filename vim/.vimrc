@@ -42,7 +42,6 @@ Plug 'mattn/emmet-vim'
 " Initialize plugin system
 call plug#end()
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " for vimrc project
 set runtimepath+=~/.vim_runtime
