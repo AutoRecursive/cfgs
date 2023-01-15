@@ -13,5 +13,6 @@ powershell ..\..\chemacs\install.ps1
 
 @REM echo (("default" . ((user-emacs-directory . "~/.prelude"))) >> %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
 @REM echo ("spacemacs" . ((user-emacs-directory . "~/.spacemacs")))) >> %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
-echo (("default" . ((user-emacs-directory . "~/.prelude.d"))) > %USERPROFILE%\.emacs-profiles.el
-echo ("spacemacs" . ((user-emacs-directory . "~/.spacemacs.d")))) >> %USERPROFILE%\.emacs-profiles.el
+echo (("default" . ((user-emacs-directory . "~/.prelude.d"))) > %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
+echo ("spacemacs" . ((user-emacs-directory . "~/.spacemacs.d")))) >> %USERPROFILE%\AppData\Roaming\.emacs-profiles.el
+copy %USERPROFILE%\.emacs  %USERPROFILE%\AppData\Roaming\
