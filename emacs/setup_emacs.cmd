@@ -1,5 +1,5 @@
 @echo off
-git clone https://github.com/5cr009e/prelude.git %USERPROFILE%\AppData\Roaming\.prelude.d
+git clone https://github.com/bbatsov/prelude.git %USERPROFILE%\AppData\Roaming\.prelude.d
 mklink /D %USERPROFILE%\.prelude %USERPROFILE%\AppData\Roaming\.prelude.d
 
 git clone https://github.com/syl20bnr/spacemacs %USERPROFILE%\AppData\Roaming\.spacemacs.d
